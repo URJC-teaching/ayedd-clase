@@ -7,5 +7,6 @@ src/out
 src/.idea/
 src/results
 src/main/main.iml
-resources/
+resources/algs4-data/
+results
 
