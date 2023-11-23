@@ -1,0 +1,11 @@
+.idea/
+lab.iml
+META-INF/
+pom.xml
+target/
+src/out
+src/.idea/
+src/results
+src/main/main.iml
+resources/
+
