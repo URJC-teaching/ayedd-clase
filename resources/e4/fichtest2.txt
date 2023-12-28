@@ -1,0 +1,3 @@
+drop 1 A
+mix 2 5
+print
