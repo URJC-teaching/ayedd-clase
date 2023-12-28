@@ -1,12 +1,7 @@
-.idea/
 lab.iml
 META-INF/
 pom.xml
 target/
-src/out
-src/.idea/
+out
 src/results
-src/main/main.iml
-resources/algs4-data/
-results
 
