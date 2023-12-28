@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Whitelist" type="Application" factoryName="Application" folderName="Análisis">
+    <option name="MAIN_CLASS_NAME" value="clase.an_algoritmos.Whitelist" />
+    <module name="lab" />
+    <option name="PROGRAM_PARAMETERS" value="resources/algs4-data/1Kints.txt" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

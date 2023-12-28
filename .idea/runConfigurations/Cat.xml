@@ -1,0 +1,12 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Cat" type="Application" factoryName="Application" folderName="Java">
+    <option name="ALTERNATIVE_JRE_PATH" value="11" />
+    <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+    <option name="MAIN_CLASS_NAME" value="clase.intro.Cat" />
+    <module name="ayedd-clase" />
+    <option name="PROGRAM_PARAMETERS" value="src/main/java/clase/intro/in1.txt src/main/java/clase/intro/in2.txt src/main/java/clase/intro/out.txt" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
