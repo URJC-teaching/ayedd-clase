@@ -1,7 +1,5 @@
 # ayedd-clase
-Este es un repositorio plantilla para la asignatura de Algoritmos y Estructuras de Datos del Grado en Ingeniería de Robótica Software de la Universidad Rey Juan Carlos.
-
-El único código disponible inicialmente es aquél que se utilizará en clase durante las explicaciones. Los test y recursos para la realización de las prácticas se publicarán en Aula Virtual según avance la asignatura.
+Este en para la asignatura de Algoritmos y Estructuras de Datos del Grado en Ingeniería de Robótica Software de la Universidad Rey Juan Carlos que contiene el código que se mostrará en clase.
 
 # Configuración
 Para que el proyecto Java funcione correctamente, hay que seguir los siguientes pasos:
