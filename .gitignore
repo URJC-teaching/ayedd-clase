@@ -4,4 +4,6 @@ pom.xml
 target/
 out
 src/results
+resources/algs4-data/
+
 

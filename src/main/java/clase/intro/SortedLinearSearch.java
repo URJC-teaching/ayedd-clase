@@ -9,13 +9,11 @@ import java.util.Arrays;
 public class SortedLinearSearch {
     public static int indexOf(int key, int[] a) {
         for (int i = 0; i < a.length; i++) {
-            {
-                if (a[i] == key)
-                    return i;
-                else
-                    if(a[i] > key)
-                        return -1;
-            }
+            if (a[i] == key)
+                return i;
+            else
+                if(a[i] > key)
+                    return -1;
         }
         return -1;
 

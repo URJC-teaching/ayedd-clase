@@ -27,14 +27,16 @@ public class FlipsMax {
         Counter heads = new Counter("heads");
         Counter tails = new Counter("tails");
         for (int i = 0; i < n; i++) {
-            if (StdRandom.bernoulli(0.5)) heads.increment();
-            else                          tails.increment();
+            if (StdRandom.bernoulli(0.5))
+                heads.increment();
+            else
+                tails.increment();
         }
 
         if (heads.tally() == tails.tally())
             StdOut.println("Tie");
         else
-            StdOut.println(max(heads, tails) + " wins"); // imprime el mayor contador (toString)
+            StdOut.println(max(heads, tails) + " wins"); // llamada implícita a toString
     }
 }
 

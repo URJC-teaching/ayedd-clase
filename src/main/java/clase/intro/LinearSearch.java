@@ -7,10 +7,8 @@ import edu.princeton.cs.algs4.StdOut;
 public class LinearSearch {
     public static int indexOf(int key, int[] a) {
         for (int i = 0; i < a.length; i++) {
-            {
-                if (a[i] == key) {
-                    return i;
-                }
+            if (a[i] == key) {
+                return i;
             }
         }
         return -1;
@@ -23,7 +21,9 @@ public class LinearSearch {
         while(!StdIn.isEmpty()){
             int key = StdIn.readInt();
             if (indexOf(key, whitelist) == -1){
-                StdOut.println(key);
+                StdOut.println("Not found: " + key);
+            } else {
+               StdOut.println("Found:" + key);
             }
         }
     }

@@ -26,19 +26,19 @@ public class Rolls {
         int SIDES = 6;
 
         // initialize counters
-        Counter[] rolls = new Counter[SIDES+1];
-        for (int i = 1; i <= SIDES; i++) {
-            rolls[i] = new Counter(i + "s");
+        Counter[] rolls = new Counter[SIDES];
+        for (int i = 0; i < SIDES; i++) {
+            rolls[i] = new Counter(i + 1 + "s");
         }
 
         // flip dice
         for (int j = 0; j < n; j++) {
-            int result = StdRandom.uniform(1, SIDES+1);
+            int result = StdRandom.uniform(0, SIDES);
             rolls[result].increment();
         }
 
         // print results
-        for (int i = 1; i <= SIDES; i++) {
+        for (int i = 0; i < SIDES; i++) {
             StdOut.println(rolls[i]);
         }
     }

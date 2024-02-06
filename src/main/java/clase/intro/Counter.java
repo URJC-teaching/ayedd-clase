@@ -104,7 +104,7 @@ public class Counter implements Comparable<Counter> {
         // create n counters
         Counter[] hits = new Counter[n];
         for (int i = 0; i < n; i++) {
-            hits[i] = new Counter("counter" + i);
+            hits[i] = new Counter("counter_" + i);
         }
 
         // increment trials counters at random
