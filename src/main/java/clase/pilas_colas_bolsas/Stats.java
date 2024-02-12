@@ -12,7 +12,7 @@ public class Stats
         while (!StdIn.isEmpty()) {
             numbers.add(StdIn.readDouble());
         }
-        int n= numbers.size();
+        int n = numbers.size();
 
         double sum = 0.0;
         for (double x : numbers) {

@@ -5,4 +5,4 @@ javac -d . -cp ../../lib/algs4.jar ../../src/main/java/clase/pilas_colas_bolsas/
 javac -d . -cp ../../lib/algs4.jar ../../src/main/java/clase/pilas_colas_bolsas/Node.java
 javac -d . -cp ../../lib/algs4.jar ../../src/main/java/clase/pilas_colas_bolsas/Queue.java
 javac -d . -cp ../../lib/algs4.jar ../../src/main/java/clase/pilas_colas_bolsas/Bag.java
-
+javac -d . -cp ../../lib/algs4.jar ../../src/main/java/clase/pilas_colas_bolsas/Bag.java ../../src/main/java/clase/pilas_colas_bolsas/Stats.java

@@ -8,6 +8,7 @@ public class TestQueue {
     public static int[] readAllInts()
     {
         Queue<Integer> queue = new Queue<Integer>();
+        System.out.println("Enter integers, one at a time, followed by <Ctrl-d> (EOF):");
         while (!StdIn.isEmpty()) {
             queue.enqueue(StdIn.readInt());
         }
