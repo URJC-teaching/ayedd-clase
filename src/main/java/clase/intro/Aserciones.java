@@ -7,5 +7,7 @@ public class Aserciones {
         int j = 2;
 
         assert i > j;
+
+        System.out.println("Después de aserción");
     }
 }

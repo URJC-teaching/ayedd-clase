@@ -17,7 +17,9 @@ public class Whitelist
 			int key = StdIn.readInt();
 			// Mostrar key si no está en la lista blanca
 			if (!set.contains(key)) {
-				StdOut.println(key);
+				StdOut.println(key + " is NOT in the whitelist");
+			} else {
+				StdOut.println("Hit!");
 			}
 		}
     }
