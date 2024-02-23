@@ -11,7 +11,6 @@ public class Reverse
         while (!StdIn.isEmpty()) {
             stack.push(StdIn.readInt());
         }
-
         for (int i : stack) {
             StdOut.println(i);
         }

@@ -6,7 +6,7 @@ import edu.princeton.cs.algs4.StdOut;
 public class FixedCapacityStackOfStrings
 {
     private String[] a;     // elementos de la pila
-    private int      n = 0; // número de elementos en la pila
+    private int n = 0; // número de elementos en la pila
 
     public FixedCapacityStackOfStrings(int capacity)
     {  a = new String[capacity]; }
@@ -14,11 +14,15 @@ public class FixedCapacityStackOfStrings
     public boolean isEmpty() { return n == 0; }
     public int size()        { return n; }
 
-    public void push(String item)
-    { a[n++] = item; }
+    public void push(String item) {
+        a[n] = item;
+        n++;
+    }
 
-    public String pop()
-    { return a[--n]; }
+    public String pop() {
+        return a[--n];
+    }
+
 
     public static void main (String[] args)
     {

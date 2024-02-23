@@ -25,10 +25,8 @@ public class Node
             Node aux = first;
             StdOut.println(aux.item);
             while(aux.next != null){
-
                 aux = aux.next;
                 StdOut.println(aux.item);
-
             }
         }
 

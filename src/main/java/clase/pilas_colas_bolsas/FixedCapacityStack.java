@@ -6,10 +6,11 @@ import edu.princeton.cs.algs4.StdOut;
 public class FixedCapacityStack<Item>
 {
     private Item[] a;     // elementos de la pila
-    private int    n = 0; // número de elementos en la pila
+    private int n = 0; // número de elementos en la pila
 
-    public FixedCapacityStack(int capacity)
-    {  a = (Item[]) new Object[capacity]; }
+    public FixedCapacityStack(int capacity) {
+        a = (Item[]) new Object[capacity];
+    }
 
     public boolean isEmpty() { return n == 0; }
     public int size()        { return n; }
