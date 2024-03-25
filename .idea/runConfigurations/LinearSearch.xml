@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="LinearSearch" type="Application" factoryName="Application" folderName="Java">
+    <option name="MAIN_CLASS_NAME" value="clase.intro.LinearSearch" />
+    <module name="ayedd-clase" />
+    <option name="PROGRAM_PARAMETERS" value="resources/algs4-data/largeW.txt" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
