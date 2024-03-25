@@ -24,8 +24,8 @@ public class ThreeSum {
 
         StdOut.println(args[0]);
         Stopwatch sw = new Stopwatch();
-        StdOut.println(count(a));
-        StdOut.println(sw.elapsedTime());
+        StdOut.println("Found triples: " + count(a));
+        StdOut.println("Time: " + sw.elapsedTime() + " seconds");
     } 
 } 
 
