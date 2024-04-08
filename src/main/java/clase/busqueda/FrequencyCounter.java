@@ -25,6 +25,7 @@ package clase.busqueda;
  *
  ******************************************************************************/
 
+import edu.princeton.cs.algs4.In;
 import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;
 
@@ -57,17 +58,16 @@ public class FrequencyCounter {
     public static void main(String[] args) {
         int distinct = 0, words = 0;
         int minlen = Integer.parseInt(args[0]);
+        In in = new In(args[1]);
         ST<String, Integer> st = new ST<String, Integer>();
 
-        // compute frequency counts
-        while (!StdIn.isEmpty()) {
-            String key = StdIn.readString();
+        while (!in.isEmpty()) {
+            String key = in.readString();
             if (key.length() < minlen) continue;
             words++;
-            if (st.contains(key)) {
+            if (st.contains(key)) { // si está en la TS, incrementa la frecuencia
                 st.put(key, st.get(key) + 1);
-            }
-            else {
+            } else { // si no, se añade con frecuencia 1
                 st.put(key, 1);
                 distinct++;
             }
