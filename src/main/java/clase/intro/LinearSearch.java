@@ -15,8 +15,8 @@ public class LinearSearch {
 
     }
     public static void main(String[] args){
-        In in = new In(args[0]);
-        int[] whitelist = in.readAllInts();
+        In in = new In(args[0]); // crea un objeto de la clase In para leer el archivo pasado como argumento al programa
+        int[] whitelist = in.readAllInts(); // lee todos los enteros del archivo pasado como argumento al programa
 
         while(!StdIn.isEmpty()){
             int key = StdIn.readInt();
