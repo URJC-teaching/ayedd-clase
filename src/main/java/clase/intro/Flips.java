@@ -33,8 +33,10 @@ public class Flips {
         Counter heads = new Counter("heads");
         Counter tails = new Counter("tails");
         for (int i = 0; i < n; i++) {
-            if (StdRandom.bernoulli(0.5)) {heads.increment();}
-            else                          {tails.increment();}
+            if (StdRandom.bernoulli(0.5))
+                heads.increment();
+            else
+                tails.increment();
         }
         StdOut.println(heads);
         StdOut.println(tails);
