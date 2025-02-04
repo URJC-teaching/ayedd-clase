@@ -1,6 +1,6 @@
 package clase.intro;
 
-public class I {
+public class Iter {
     public static void main(String[] args) {
         int i, a;
         i = 3;
