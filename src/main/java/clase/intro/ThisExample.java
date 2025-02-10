@@ -1,14 +1,14 @@
 package clase.intro;
 
-public class EjemploThis {
+public class ThisExample {
 
     private int valor;
 
-    public EjemploThis(int valor) {
+    public ThisExample(int valor) {
         this.valor = valor;
     }
 
-    public EjemploThis() { valor = 0; }
+    public ThisExample() { valor = 0; }
 
     public int suma(int valor) {
         return this.valor + valor;
@@ -19,11 +19,11 @@ public class EjemploThis {
     }
 
     public static void main(String[] args) {
-        EjemploThis ejemplo_1 = new EjemploThis(10);
+        ThisExample ejemplo_1 = new ThisExample(10);
         System.out.println(ejemplo_1.suma(5));
         System.out.println(ejemplo_1.resta(5));
 
-        EjemploThis ejemplo_2 = new EjemploThis();
+        ThisExample ejemplo_2 = new ThisExample();
         System.out.println(ejemplo_2.suma(1));
         System.out.println(ejemplo_2.resta(1));
     }
