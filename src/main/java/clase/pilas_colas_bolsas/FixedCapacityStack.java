@@ -18,8 +18,7 @@ public class FixedCapacityStack<Item>
     public void push(Item item)
     { a[n++] = item; }
 
-    public Item pop()
-    { return a[--n]; }
+    public Item pop()  {return a[--n];}
 
     public static void main (String[] args)
     {
@@ -32,5 +31,10 @@ public class FixedCapacityStack<Item>
             else if (!s.isEmpty()) { StdOut.print(s.pop() + " "); }
         }
         StdOut.println("(" + s.size() + " elements on the stack)");
+
+        int n = s.size();
+        for (int i = 0; i < n; i++) {
+            StdOut.println(s.pop());
+        }
     }
 }

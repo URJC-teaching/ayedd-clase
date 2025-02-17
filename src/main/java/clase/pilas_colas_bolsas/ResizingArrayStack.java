@@ -7,8 +7,8 @@ import java.util.Iterator;
 
 public class ResizingArrayStack<Item> implements Iterable<Item>
 {
-    // Inicialmente el tamaño del array es 1
-    private Item[] a = (Item[]) new Object[1]; 
+    // Inicialmente, el tamaño del array es 1
+    private Item[] a = (Item[]) new Object[1]; // Tenemos que hacer un cast a Item[] para que encajen los tipos
     private int n = 0;
 
     public boolean isEmpty() {
