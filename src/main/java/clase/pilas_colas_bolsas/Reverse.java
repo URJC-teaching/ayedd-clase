@@ -12,7 +12,7 @@ public class Reverse
             stack.push(StdIn.readInt());
         }
         for (int i : stack) {
-            StdOut.println(i);
+            System.out.println(i);
         }
     }
 }

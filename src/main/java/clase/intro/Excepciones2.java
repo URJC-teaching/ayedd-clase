@@ -13,7 +13,7 @@ public class Excepciones2 {
         }
         catch (java.lang.ArithmeticException e) {
             System.err.println("División entre 0");
-            System.exit(1);
+            // System.exit(1);
         }
 
         StdOut.println("Después de excepción");

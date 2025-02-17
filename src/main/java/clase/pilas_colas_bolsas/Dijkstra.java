@@ -3,6 +3,8 @@ package clase.pilas_colas_bolsas;
 import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;
 
+import java.util.Scanner;
+
 public class Dijkstra {
     private static boolean isBinOperator(String op) {
         String ops = "+-*/";
@@ -33,8 +35,11 @@ public class Dijkstra {
         Stack<String> ops = new Stack<String>();
         Stack<Double> vals = new Stack<Double>();
 
+        Scanner sc = new Scanner(System.in);
+
         //código para que toda la operación vaya en una sola línea (sólo funciona con números de 1 dígito)
-        String input = StdIn.readString();
+        // String input = StdIn.readString(); // Otra manera de leer de la consola utilizando la librería algs4
+        String input = sc.nextLine();
         for(int i = 0; i < input.length(); i++){
             String s = "" + input.charAt(i);
             if (s.equals("(")) {

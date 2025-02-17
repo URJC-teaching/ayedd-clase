@@ -22,6 +22,6 @@ public class TestQueue {
 
     public static void main (String[] args) {
         int[] a = readAllInts();
-        StdOut.println(Arrays.toString(a));
+        System.out.println(Arrays.toString(a));
     }
 }
