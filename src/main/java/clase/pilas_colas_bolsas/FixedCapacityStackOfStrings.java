@@ -29,9 +29,9 @@ public class FixedCapacityStackOfStrings
         FixedCapacityStackOfStrings s;
         s = new FixedCapacityStackOfStrings(100);
         while (!StdIn.isEmpty()) {
-            String item = StdIn.readString();
+            String item = StdIn.readLine();
             if (!item.equals("-")) { s.push(item); }
-            else if (!s.isEmpty()) { StdOut.println(s.pop() + " "); }
+            else if (!s.isEmpty()) { StdOut.println(s.pop()); }
         }
         StdOut.println("(" + s.size() + " elements on the stack)");
 

@@ -35,7 +35,7 @@ public class ResizingArrayStack<Item> implements Iterable<Item>
 
     public Item pop() {   // Extraer item de la cima de la pila y devolverlo
         Item item = a[--n]; // primero se decrementa, luego se extrae
-        a[n] = null;  // Evitar loitering
+        a[n] = null;  // Evitar loitering. Si no se hace, el objeto no se puede recoger, ya que alguien lo sigue referenciando
         if (n > 0 && n == a.length/4) {
             resize(a.length/2);
         }

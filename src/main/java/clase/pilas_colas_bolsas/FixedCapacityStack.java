@@ -26,14 +26,14 @@ public class FixedCapacityStack<Item>
         s = new FixedCapacityStack<String>(100);
         while (!StdIn.isEmpty())
         {
-            String item = StdIn.readString();
+            String item = StdIn.readLine();
             if (!item.equals("-")) { s.push(item); }
-            else if (!s.isEmpty()) { StdOut.print(s.pop() + " "); }
+            else if (!s.isEmpty()) { StdOut.println(s.pop()); }
         }
         StdOut.println("(" + s.size() + " elements on the stack)");
 
         int n = s.size();
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++) { // Cannot use foreach loop!
             StdOut.println(s.pop());
         }
     }
