@@ -8,8 +8,13 @@ import java.util.Iterator;
 public class ResizingArrayStack<Item> implements Iterable<Item>
 {
     // Inicialmente, el tamaño del array es 1
-    private Item[] a = (Item[]) new Object[1]; // Tenemos que hacer un cast a Item[] para que encajen los tipos
-    private int n = 0;
+    private Item[] a; // Tenemos que hacer un cast a Item[] para que encajen los tipos
+    private int n;
+
+    public ResizingArrayStack() {
+        a = (Item[]) new Object[1];
+        n = 0;
+    }
 
     public boolean isEmpty() {
         return n == 0;
@@ -34,7 +39,7 @@ public class ResizingArrayStack<Item> implements Iterable<Item>
     }
 
     public Item pop() {   // Extraer item de la cima de la pila y devolverlo
-        Item item = a[--n]; // primero se decrementa, luego se extrae
+        Item item = a[--n];
         a[n] = null;  // Evitar loitering. Si no se hace, el objeto no se puede recoger, ya que alguien lo sigue referenciando
         if (n > 0 && n == a.length/4) {
             resize(a.length/2);

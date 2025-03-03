@@ -20,7 +20,9 @@ public class FixedCapacityStackOfStrings
     }
 
     public String pop() {
-        return a[--n];
+        n--;
+        return a[n];
+        // return a[--n];
     }
 
 
