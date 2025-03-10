@@ -3,7 +3,7 @@ package clase.an_algoritmos;
 import edu.princeton.cs.algs4.*;
 import java.util.Arrays;
 
-public class ThreeSumFast {
+public class  ThreeSumFast {
 
     // returns true if the sorted array a[] contains any duplicated integers
     private static boolean containsDuplicates(int[] a) {
