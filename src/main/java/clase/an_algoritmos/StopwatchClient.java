@@ -8,10 +8,9 @@ public class StopwatchClient
     {
 	int n = Integer.parseInt(args[0]);
 	int[] a = new int[n];
-	for (int i = 0; i < n; i++)
-	    {
+	for (int i = 0; i < n; i++) {
 		a[i] = StdRandom.uniform(-1000000, 1000000);
-	    }
+	}
 	Stopwatch timer = new Stopwatch();
 	int count = ThreeSum.count(a);
 	double time = timer.elapsedTime();
