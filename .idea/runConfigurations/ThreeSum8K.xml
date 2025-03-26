@@ -1,7 +1,6 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="ThreeSum8K" type="Application" factoryName="Application" folderName="Análisis">
     <option name="ALTERNATIVE_JRE_PATH" value="11" />
-    <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
     <option name="MAIN_CLASS_NAME" value="clase.an_algoritmos.ThreeSum" />
     <module name="ayedd-clase" />
     <option name="PROGRAM_PARAMETERS" value="resources/algs4-data/8Kints.txt" />
