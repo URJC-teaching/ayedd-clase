@@ -1,7 +1,6 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="FileSorter" type="Application" factoryName="Application" folderName="Ordenación">
     <option name="ALTERNATIVE_JRE_PATH" value="11" />
-    <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
     <option name="MAIN_CLASS_NAME" value="clase.ordenacion.FileSorter" />
     <module name="ayedd-clase" />
     <option name="PROGRAM_PARAMETERS" value="/" />
