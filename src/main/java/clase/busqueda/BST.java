@@ -372,9 +372,9 @@ public class BST<Key extends Comparable<Key>, Value> {
     // Precondition: rank is in legal range.
     private Key select(Node x, int rank) {
         if (x == null) return null;
-        int leftSize = size(x.left);
-        if      (leftSize > rank) return select(x.left,  rank);
-        else if (leftSize < rank) return select(x.right, rank - leftSize - 1); 
+        int leftSize = size(x.left); // Rank of the current node (size of left subtree)
+        if      (leftSize > rank) return select(x.left,  rank); // The key is in the left subtree
+        else if (leftSize < rank) return select(x.right, rank - leftSize - 1);  // The key is in the right subtree. We look for a key of rank (rank - leftSize - 1) here
         else                      return x.key;
     }
 
